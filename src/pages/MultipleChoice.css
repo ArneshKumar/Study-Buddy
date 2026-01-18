@@ -1,0 +1,227 @@
+.mcq-btn {
+  background: rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.92);
+  border: 3px solid rgba(205, 205, 215, 0.7);
+
+  width: 600px;
+  border-radius: 18px;
+  padding: 18px 28px;
+  font-size: 22px;
+  font-weight: 600;
+  justify-content: center;
+
+  transition: background-color 0.15s ease, border-color 0.15s ease,
+    transform 0.08s ease, box-shadow 0.15s ease;
+}
+
+.mcq-btn:hover {
+  background: rgba(0, 0, 0, 0.35);
+  border-color: rgba(235, 235, 245, 0.9);
+}
+
+.mcq-btn:active {
+  transform: scale(0.99);
+}
+
+.mcq-btn:focus {
+  outline: none;
+}
+.mcq-btn:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.35);
+  outline-offset: 3px;
+}
+
+.navigate-study {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+}
+
+.header-notes {
+  margin-bottom: 100px;
+}
+
+.notes {
+  font-size: 20px;
+  font-family: 'Times New Roman';
+  color: white;
+  background-color: black;
+  padding: 10px;
+}
+
+.buttons {
+  position: relative;
+  margin-left: 10px; 
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 40px;
+  justify-content: center;
+}
+
+.flashcard-container {
+  perspective: 1000px;
+  width: 500px;
+  height: 500px;
+  user-select: none;
+}
+
+#flashcards {
+    width: 500px;
+    height: 500px;
+}
+
+.flashcard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.flashcard.flipped {
+  transform: rotateY(180deg);
+}
+
+.flashcard .front,
+.flashcard .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.flashcard .back {
+  transform: rotateY(180deg);
+}
+
+.flashcard-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .flashcard-container {
+    width: 90%;
+    height: 400px;
+  }
+  .flashcard .front,
+  .flashcard .back {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .my-component {
+    width: 500px; 
+    margin: 0 auto; 
+  }
+}
+.ansbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+    label {
+      font-size: 20px;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+    input {
+      border-radius: 50px;
+      width: 300px;
+      height: 40px;
+      font-size: 20px;
+      padding: 10px;
+      margin-right: 10vw;
+      background-color: black;
+    }
+    button {
+      width: 100px;
+      height: 40px;
+      font-size: 18px;
+    }
+    .answer {
+      display: hidden;
+      font-weight: bold;
+      font-size: 20px;
+    }
+}
+.MCQContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+  margin-left: 60px;
+  position: relative;
+  top: 155px; 
+}
+
+.MCQ{
+    width: 300px;
+    height: 200px;
+    font-size: 20px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.mcq-btn.correct {
+  background: rgba(79, 217, 138, 0.35);
+  border-color: #2fb46a;
+  color: #fff;
+}
+
+.mcq-btn.incorrect {
+  background: rgba(255, 82, 82, 0.25);
+  border-color: #ff4d4d;
+  color: #fff;
+}
+
+.mcq-btn.correct:hover {
+  background: rgba(79, 217, 138, 0.45);
+  border-color: #239a58;
+}
+
+.mcq-btn.incorrect:hover {
+  background: rgba(255, 82, 82, 0.33);
+  border-color: #e63b3b;
+}
+
+.nav-btnss {
+  width: 160px;
+  height: 70px;
+  font-size: 20px;
+  border-radius: 999px;
+  background-color: #9B73E8;
+  border-color: #7C55C8;
+  border-width: 3px;
+}
+
+.nav-btnss:hover {
+  background-color: #7C55C8;
+  border-color: #5F3FA6;
+}
+
+.card-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.card-nav {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
